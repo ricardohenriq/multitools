@@ -152,30 +152,18 @@ function removeAllSpaces(fieldId) {
 //função que faz o hash
 
 $('#generate-hash').click(function(){
-	var hashTypes = [];
-	hashTypes['MD5'] = 'library/CryptoJSv3.1.2/rollups/md5.js';
-	hashTypes['SHA-1'] = 'library/CryptoJSv3.1.2/rollups/sha1.js';
-	hashTypes['SHA-256'] = 'library/CryptoJSv3.1.2/rollups/sha256.js';
-	hashTypes['SHA-512'] = 'library/CryptoJSv3.1.2/rollups/sha512.js';
-	hashTypes['RIPEMD-160'] = 'library/CryptoJSv3.1.2/rollups/ripemd160.js';
-	hashTypes['SHA-3-(512 bits)'] = 'library/CryptoJSv3.1.2/rollups/sha3.js';
-	hashTypes['SHA-3-(384 bits)'] = 'library/CryptoJSv3.1.2/rollups/sha3.js';
-	hashTypes['SHA-3-(256 bits)'] = 'library/CryptoJSv3.1.2/rollups/sha3.js';
-	hashTypes['SHA-3-(224 bits)'] = 'library/CryptoJSv3.1.2/rollups/sha3.js';
 	var hashType = document.getElementById('hash-type').value;
-	downloadHashScript(hashType, hashTypes[hashType]);
+	var textToHash = getDataToHash('text');
+	var hash = executeHash(hashType, textToHash);
+	printHash(hash, 'hash');
 });
 
-function downloadHashScript(hashType, hashURL){
-	$.getScript(hashURL, function(){
-		executeHash(hashType);
-	});
+function getDataToHash(field){
+	return document.getElementById(field).value;
 }
 
-function executeHash(hashType){
-	var textToHash = document.getElementById('text').value;
+function executeHash(hashType, textToHash){
 	var hash;
-	
 	if(hashType == 'MD5'){
 		hash = executeHashMD5(textToHash);
 	}else if(hashType == 'SHA-1'){
@@ -195,7 +183,7 @@ function executeHash(hashType){
 	}else if(hashType == 'SHA-3-(224 bits)'){
 		hash = executeHashSHA3224(textToHash);
 	}
-	printHash(hash, 'hash');
+	return hash;
 }
 
 function printHash(hash, areaToPrint){
@@ -249,8 +237,10 @@ $('#file-to-hash').change(
         reader.addEventListener(
             'load',
             function () {
-                var wordArray = CryptoJS.lib.WordArray.create(this.result);
-                $('#hash').text(CryptoJS.MD5(wordArray));
+				var hashType = document.getElementById('hash-type').value;
+				var textToHash = CryptoJS.lib.WordArray.create(this.result);
+				var hash = executeHash(hashType, textToHash);
+				printHash(hash, 'hash');
             }
         );
         
