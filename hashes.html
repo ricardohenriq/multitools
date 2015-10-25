@@ -27,6 +27,7 @@
 		<link rel="stylesheet" href="assets/css/style.css">
 		<script defer src="library/jquery-1.11.1/jquery-1.11.1.min.js"></script>
 		<script defer src="library/Bootstrap/js/bootstrap.min.js"></script>
+		<script defer src="library/CryptoJSv3.1.2/components/lib-typedarrays-min.js"></script>
 		<script defer src="assets/js/main.js"></script>
 	</head>
 	<body>
@@ -98,23 +99,24 @@
 						</div>
 						<div class="work-area">
 							<textarea rows="20" name="text" id="text" maxlength="10000"	placeholder="Put your Text or Word Here to generate the HASH."></textarea>
+							<hr>
+							<input type="file" id="file-to-hash">
+							<hr>
 							<div class="buttons-area">
-								<select style="max-width:150px;height:34px">
+								<select id="hash-type" style="max-width:150px;height:34px">
 									<option value="MD5">MD5</option>
 									<option value="SHA-1">SHA-1</option>
-									<option value="SHA-2">SHA-2</option>
-									<option value="SHA-3 (512 bits)">SHA-3 (512 bits)</option>
-									<option value="SHA-3 (384 bits)">SHA-3 (384 bits)</option>
-									<option value="SHA-3 (256 bits)">SHA-3 (256 bits)</option>
-									<option value="SHA-3 (224 bits)">SHA-3 (224 bits)</option>
+									<option value="SHA-256">SHA-256</option>
+									<option value="SHA-512">SHA-512</option>
+									<option value="SHA-3-(512 bits)">SHA-3 (512 bits)</option>
+									<option value="SHA-3-(384 bits)">SHA-3 (384 bits)</option>
+									<option value="SHA-3-(256 bits)">SHA-3 (256 bits)</option>
+									<option value="SHA-3-(224 bits)">SHA-3 (224 bits)</option>
 									<option value="RIPEMD-160">RIPEMD-160</option>
-									<option value="HMACMD5">HMACMD5</option>
-									<option value="HMACSHA-1">HMACSHA-1</option>
-									<option value="HMACSHA-256">HMACSHA-256</option>
-									<option value="HMACSHA-512">HMACSHA-512</option>
 								</select>
-								<button class="btn btn-info" >GENERATE</button>
-								<button class="btn btn-info" >Clear All</button>
+								<button class="btn btn-info" id="generate-hash">GENERATE</button>
+								<button class="btn btn-info" id="reset-text">Clear All</button>
+								<button class="btn btn-info" onclick="copyToClipboard('hash')">Copy to Clipboard</button>
 							</div>
 							<label class="control-label col-sm-2" for="hash">HASH:</label>
 							<div class="col-sm-10">          

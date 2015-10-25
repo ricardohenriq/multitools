@@ -147,6 +147,117 @@ function removeAllSpaces(fieldId) {
 	document.getElementById(fieldId).value = newString;
 }
 
+//função que captura o click de gerar hash
+//função que faz o download do script e chama a função que faz o hash
+//função que faz o hash
+
+$('#generate-hash').click(function(){
+	var hashTypes = [];
+	hashTypes['MD5'] = 'library/CryptoJSv3.1.2/rollups/md5.js';
+	hashTypes['SHA-1'] = 'library/CryptoJSv3.1.2/rollups/sha1.js';
+	hashTypes['SHA-256'] = 'library/CryptoJSv3.1.2/rollups/sha256.js';
+	hashTypes['SHA-512'] = 'library/CryptoJSv3.1.2/rollups/sha512.js';
+	hashTypes['RIPEMD-160'] = 'library/CryptoJSv3.1.2/rollups/ripemd160.js';
+	hashTypes['SHA-3-(512 bits)'] = 'library/CryptoJSv3.1.2/rollups/sha3.js';
+	hashTypes['SHA-3-(384 bits)'] = 'library/CryptoJSv3.1.2/rollups/sha3.js';
+	hashTypes['SHA-3-(256 bits)'] = 'library/CryptoJSv3.1.2/rollups/sha3.js';
+	hashTypes['SHA-3-(224 bits)'] = 'library/CryptoJSv3.1.2/rollups/sha3.js';
+	var hashType = document.getElementById('hash-type').value;
+	downloadHashScript(hashType, hashTypes[hashType]);
+});
+
+function downloadHashScript(hashType, hashURL){
+	$.getScript(hashURL, function(){
+		executeHash(hashType);
+	});
+}
+
+function executeHash(hashType){
+	var textToHash = document.getElementById('text').value;
+	var hash;
+	
+	if(hashType == 'MD5'){
+		hash = executeHashMD5(textToHash);
+	}else if(hashType == 'SHA-1'){
+		hash = executeHashSHA1(textToHash);
+	}else if(hashType == 'SHA-256'){
+		hash = executeHashSHA256(textToHash);
+	}else if(hashType == 'SHA-512'){
+		hash = executeHashSHA512(textToHash);
+	}else if(hashType == 'RIPEMD-160'){
+		hash = executeHashRIPEMD160(textToHash);
+	}else if(hashType == 'SHA-3-(512 bits)'){
+		hash = executeHashSHA3512(textToHash);
+	}else if(hashType == 'SHA-3-(384 bits)'){
+		hash = executeHashSHA3384(textToHash);
+	}else if(hashType == 'SHA-3-(256 bits)'){
+		hash = executeHashSHA3256(textToHash);
+	}else if(hashType == 'SHA-3-(224 bits)'){
+		hash = executeHashSHA3224(textToHash);
+	}
+	printHash(hash, 'hash');
+}
+
+function printHash(hash, areaToPrint){
+	document.getElementById(areaToPrint).value = hash;
+}
+
+function executeHashMD5(text){
+	return CryptoJS.MD5(text);
+}
+
+function executeHashSHA1(text){
+	return CryptoJS.SHA1(text);
+}
+
+function executeHashSHA256(text){
+	return CryptoJS.SHA256(text);
+}
+
+function executeHashSHA512(text){
+	return CryptoJS.SHA512(text);
+}
+
+function executeHashSHA3512(text){
+	return CryptoJS.SHA3(text, {outputLength:512});
+}
+
+function executeHashSHA3384(text){
+	return CryptoJS.SHA3(text, {outputLength:384});
+}
+
+function executeHashSHA3256(text){
+	return CryptoJS.SHA3(text, {outputLength:256});
+}
+
+function executeHashSHA3224(text){
+	return CryptoJS.SHA3(text, {outputLength:224});
+}
+
+function executeHashRIPEMD160(text){
+	return CryptoJS.RIPEMD160(text);
+}
+
+$('#reset-text').click(function(){
+	document.getElementById('text').value = '';
+});
+
+$('#file-to-hash').change(
+    function () {
+        var reader = new FileReader();
+        
+        reader.addEventListener(
+            'load',
+            function () {
+                var wordArray = CryptoJS.lib.WordArray.create(this.result);
+                $('#hash').text(CryptoJS.MD5(wordArray));
+            }
+        );
+        
+        reader.readAsArrayBuffer(this.files[0]);
+    }
+);
+
 //http://www.codeforest.net/html5-image-upload-resize-and-crop
 //http://www.horariodebrasilia.org/
 //http://davidwalsh.name/convert-image-data-uri-javascript
