@@ -224,8 +224,13 @@ function executeHashRIPEMD160(text){
 	return CryptoJS.RIPEMD160(text);
 }
 
+function emptyTag(fieldId){
+	$('#' + fieldId).empty();
+	document.getElementById(fieldId).value = '';
+}
+
 $('#reset-text').click(function(){
-	document.getElementById('text').value = '';
+	emptyTag('text');
 });
 
 $('#file-to-hash').change(
@@ -332,12 +337,32 @@ $('#form_input').change(function(){
 
 $(document).ready(function(){
     completePasswordLengthSelect(4, 100);
+    completeLoremLengthSelect(1, 100);
 });
 
 function completePasswordLengthSelect(minLength, maxLength){
 	for (var i = minLength; i < maxLength+1; i++) {
 		$('#password-length').append('<option value=\"' + i + '\">' + i + '</option>');
 	}
+}
+
+function completeLoremLengthSelect(minLength, maxLength){
+	for (var i = minLength; i < maxLength+1; i++) {
+		$('#lorem-quantity').append('<option value=\"' + i + '\">' + i + '</option>');
+	}
+}
+
+$('#generate-lorem-ipsum').click(function(){
+	var loremQuantity = document.getElementById('lorem-quantity').value;
+	var loremType = document.getElementById('lorem-type').value;
+	generateLorem(loremQuantity + loremType, 'text');
+});
+
+function generateLorem(loremDescription, fieldId){
+	var lorem = new Lorem;
+	lorem.type = Lorem.TEXT;
+	lorem.query = loremDescription;
+	lorem.createLorem(document.getElementById(fieldId));
 }
 
 $('#generate-password').click(function(){
