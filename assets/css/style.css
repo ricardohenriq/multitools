@@ -5,3 +5,16 @@ textarea{
 .block{
 	margin-bottom:10px;
 }
+
+.hrow {
+font-weight:bold;
+color: #C1E97C;
+}
+.hrow td{
+padding-top: 20px;
+width: 140px;
+}
+
+.colorpicker{
+	margin: 0 auto !important;
+}
