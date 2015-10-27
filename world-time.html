@@ -4,25 +4,22 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>Publish your Banner to World</title>
-		<meta name="description" content="You can publish your banner for free, discover interesting sites,
-			access offers and companies.">
-		<meta name="keywords" content="Banner,Publish Banner free,Banner Free,Publish your site,Publish your
-			Company,access offer,Publish affiliate banner.">
+		<title></title>
+		<meta name="description" content=".">
+		<meta name="keywords" content=".">
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Ricardo Henrique">
-		<meta name="reply-to" content="mybannersreceiver@gmail.com">
-		<link rel="icon" href="assets/images/Leprechaun32x32.png" sizes="32x32">
+		<meta name="reply-to" content="">
+		<link rel="icon" href="" sizes="32x32">
 		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@mybanners">
+		<meta name="twitter:site" content="@">
 		<meta name="twitter:creator" content="@ricardohenriq">
-		<meta property="og:title" content="Publish your Banner to World">
-		<meta property="og:description" content="You can publish your banner for free, discover interesting sites,
-			access offers and companies.">
-		<meta property="og:url" content="http://mybanners.github.io/">
-		<meta property="og:image" content="http://mybanners.github.io/assets/images/Leprechaun150x150.gif">
+		<meta property="og:title" content="">
+		<meta property="og:description" content=".">
+		<meta property="og:url" content="http://multitools.github.io/">
+		<meta property="og:image" content="">
 		<meta property="og:type" content="website">
-		<meta property="og:site_name" content="MyBanners - Publish your Banner to World">
+		<meta property="og:site_name" content="">
 		<link rel="stylesheet" href="library/Bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<script defer src="library/jquery-1.11.1/jquery-1.11.1.min.js"></script>
@@ -43,15 +40,14 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="#">Words and Texts</a></li>
+						<li><a href="index.html">Words and Texts</a></li>
 						<li><a href="hashes.html">Hashes</a></li>
-						<li><a href="#">Edit Images</a></li>
-						<li class="active"><a href="#">World Time<span class="sr-only">(current)</span></a></li>
-						<li><a href="#">ASCII Art</a></li>
+						<li class="active"><a href="world-time.html">World Time<span class="sr-only">(current)</span></a></li>
+						<li><a href="ascii-art.html">ASCII Art</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit Images <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
+								<li><a href="edit-images.html">Color to Black & White</a></li>
 								<li><a href="#">Another action</a></li>
 								<li><a href="#">Something else here</a></li>
 								<li role="separator" class="divider"></li>
@@ -60,6 +56,10 @@
 								<li><a href="#">One more separated link</a></li>
 							 </ul>
 						</li>
+						<li><a href="colorpick.html">Colorpick</a></li>
+						<li><a href="passwords.html">Generate Passwords</a></li>
+						<li><a href="my-ip.html">Check your IP</a></li>
+						<li><a href="lorem-ipsum.html">Lorem Ipsum</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#">DONATE</a></li>
@@ -88,108 +88,312 @@
 						</div>
 						<div class="description">
 							<span class="title">
-								Mude a capitalização, inverta o texto, conte os caracteres, manipule o texto 
-								tudo em um só click e em um só lugar.
-							</span>
-							<br>
-							<span>
-								Simplesmente insira a palavra ou texto na caixa de texto abaixo e clique no botão com 
-								a opção desejada.
+								Veja as Horas em tempo real nas principais cidades de cada fuso-horario.
 							</span>
 						</div>
 						<div class="work-area col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 col-xs-8 col-xs-offset-2">
-							<table cellspacing="5px" style="border:2px solid red">
+							<table cellspacing="5px">
 								<tr class="hrow">
-								<td>GMT</td><td>Vancouver</td><td>San Francisco</td><td>Seattle</td>
+									<td>GMT</td>
+									<td>Vancouver</td>
+									<td>San Francisco</td>
+									<td>Seattle</td>
 								</tr>
 								<tr>
-								<td><span id="GMT"></span></td><td><span id="Vancouver"></span></td><td><span id="SanFrancisco"></span></td><td><span id="Seattle"></span></td>
+									<td>
+										<span id="GMT"></span>
+									</td>
+									<td>
+										<span id="Vancouver"></span>
+									</td>
+									<td>
+										<span id="SanFrancisco"></span>
+									</td>
+									<td>
+										<span id="Seattle"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Los Angeles</td><td>Denver</td><td>Mexico City</td><td>Houston</td>
+									<td>Los Angeles</td>
+									<td>Denver</td>
+									<td>Mexico City</td>
+									<td>Houston</td>
 								</tr>
 								<tr>
-								<td><span id="LosAngeles"></span></td><td><span id="Denver"></span></td><td><span id="MexicoCity"></span></td><td><span id="Houston"></span></td>
+									<td>
+										<span id="LosAngeles"></span>
+									</td>
+									<td>
+										<span id="Denver"></span>
+									</td>
+									<td>
+										<span id="MexicoCity"></span>
+									</td>
+									<td>
+										<span id="Houston"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Minneapolis</td><td>New Orleans</td><td>Chicago</td><td>Montgomery</td>
+									<td>Minneapolis</td>
+									<td>New Orleans</td>
+									<td>Chicago</td>
+									<td>Montgomery</td>
 								</tr>
 								<tr>
-								<td><span id="Minneapolis"></span></td><td><span id="NewOrleans"></span></td><td><span id="Chicago"></span></td><td><span id="Montgomery"></span></td>
+									<td>
+										<span id="Minneapolis"></span>
+									</td>
+									<td>
+										<span id="NewOrleans"></span>
+									</td>
+									<td>
+										<span id="Chicago"></span>
+									</td>
+									<td>
+										<span id="Montgomery"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Indianapolis</td><td>Atlanta</td><td>Detroit</td><td>Miami</td>
+									<td>Indianapolis</td>
+									<td>Atlanta</td>
+									<td>Detroit</td>
+									<td>Miami</td>
 								</tr>
 								<tr>
-								<td><span id="Indianapolis"></span></td><td><span id="Atlanta"></span></td><td><span id="Detroit"></span></td><td><span id="Miami"></span></td>
+									<td>
+										<span id="Indianapolis"></span>
+									</td>
+									<td>
+										<span id="Atlanta"></span>
+									</td>
+									<td>
+										<span id="Detroit"></span>
+									</td>
+									<td>
+										<span id="Miami"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Washington DC</td><td>Philadelphia</td><td>New York</td><td>Montreal</td>
+									<td>Washington DC</td>
+									<td>Philadelphia</td>
+									<td>New York</td>
+									<td>Montreal</td>
 								</tr>
 								<tr>
-								<td><span id="WashingtonDC"></span></td><td><span id="Philadelphia"></span></td><td><span id="NewYork"></span></td><td><span id="Montreal"></span></td>
+									<td>
+										<span id="WashingtonDC"></span>
+									</td>
+									<td>
+										<span id="Philadelphia"></span>
+									</td>
+									<td>
+										<span id="NewYork"></span>
+									</td>
+									<td>
+										<span id="Montreal"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Boston</td><td>Buenos Aires</td><td>Sao Paulo</td><td>Rio De Janeiro</td>
+									<td>Boston</td>
+									<td>Buenos Aires</td>
+									<td>Sao Paulo</td>
+									<td>Rio De Janeiro</td>
 								</tr>
 								<tr>
-								<td><span id="Boston"></span></td><td><span id="BuenosAires"></span></td><td><span id="SaoPaulo"></span></td><td><span id="RioDeJaneiro"></span></td>
+									<td>
+										<span id="Boston"></span>
+									</td>
+									<td>
+										<span id="BuenosAires"></span>
+									</td>
+									<td>
+										<span id="SaoPaulo"></span>
+									</td>
+									<td>
+										<span id="RioDeJaneiro"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Lisbon</td><td>Dublin</td><td>London</td><td>Madrid</td>
+									<td>Lisbon</td>
+									<td>Dublin</td>
+									<td>London</td>
+									<td>Madrid</td>
 								</tr>
 								<tr>
-								<td><span id="Lisbon"></span></td><td><span id="Dublin"></span></td><td><span id="London"></span></td><td><span id="Madrid"></span></td>
+									<td>
+										<span id="Lisbon"></span>
+									</td>
+									<td>
+										<span id="Dublin"></span>
+									</td>
+									<td>
+										<span id="London"></span>
+									</td>
+									<td>
+										<span id="Madrid"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Barcelona</td><td>Paris</td><td>Brussels</td><td>Amsterdam</td>
+									<td>Barcelona</td>
+									<td>Paris</td>
+									<td>Brussels</td>
+									<td>Amsterdam</td>
 								</tr>
 								<tr>
-								<td><span id="Barcelona"></span></td><td><span id="Paris"></span></td><td><span id="Brussels"></span></td><td><span id="Amsterdam"></span></td>
+									<td>
+										<span id="Barcelona"></span>
+									</td>
+									<td>
+										<span id="Paris"></span>
+									</td>
+									<td>
+										<span id="Brussels"></span>
+									</td>
+									<td>
+										<span id="Amsterdam"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Frankfurt</td><td>Rome</td><td>Berlin</td><td>Prague</td>
+									<td>Frankfurt</td>
+									<td>Rome</td>
+									<td>Berlin</td>
+									<td>Prague</td>
 								</tr>
 								<tr>
-								<td><span id="Frankfurt"></span></td><td><span id="Rome"></span></td><td><span id="Berlin"></span></td><td><span id="Prague"></span></td>
+									<td>
+										<span id="Frankfurt"></span>
+									</td>
+									<td>
+										<span id="Rome"></span>
+									</td>
+									<td>
+										<span id="Berlin"></span>
+									</td>
+									<td>
+										<span id="Prague"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Vienna</td><td>Stockholm</td><td>Athens</td><td>Helsinki</td>
+									<td>Vienna</td>
+									<td>Stockholm</td>
+									<td>Athens</td>
+									<td>Helsinki</td>
 								</tr>
 								<tr>
-								<td><span id="Vienna"></span></td><td><span id="Stockholm"></span></td><td><span id="Athens"></span></td><td><span id="Helsinki"></span></td>
+									<td>
+										<span id="Vienna"></span>
+									</td>
+									<td>
+										<span id="Stockholm"></span>
+									</td>
+									<td>
+										<span id="Athens"></span>
+									</td>
+									<td>
+										<span id="Helsinki"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Minsk</td><td>Istanbul</td><td>Cairo</td><td>Jerusalem</td>
+									<td>Minsk</td>
+									<td>Istanbul</td>
+									<td>Cairo</td>
+									<td>Jerusalem</td>
 								</tr>
 								<tr>
-								<td><span id="Minsk"></span></td><td><span id="Istanbul"></span></td><td><span id="Cairo"></span></td><td><span id="Jerusalem"></span></td>
+									<td>
+										<span id="Minsk"></span>
+									</td>
+									<td>
+										<span id="Istanbul"></span>
+									</td>
+									<td>
+										<span id="Cairo"></span>
+									</td>
+									<td>
+										<span id="Jerusalem"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Beirut</td><td>Moscow</td><td>Baghdad</td><td>Dubai</td>
+									<td>Beirut</td>
+									<td>Moscow</td>
+									<td>Baghdad</td>
+									<td>Dubai</td>
 								</tr>
 								<tr>
-								<td><span id="Beirut"></span></td><td><span id="Moscow"></span></td><td><span id="Baghdad"></span></td><td><span id="Dubai"></span></td>
+									<td>
+										<span id="Beirut"></span>
+									</td>
+									<td>
+										<span id="Moscow"></span>
+									</td>
+									<td>
+										<span id="Baghdad"></span>
+									</td>
+									<td>
+										<span id="Dubai"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Bangkok</td><td>Jakarta</td><td>Hong Kong</td><td>Beijing</td>
+									<td>Bangkok</td>
+									<td>Jakarta</td>
+									<td>Hong Kong</td>
+									<td>Beijing</td>
 								</tr>
 								<tr>
-								<td><span id="Bangkok"></span></td><td><span id="Jakarta"></span></td><td><span id="HongKong"></span></td><td><span id="Beijing"></span></td>
+									<td>
+										<span id="Bangkok"></span>
+									</td>
+									<td>
+										<span id="Jakarta"></span>
+									</td>
+									<td>
+										<span id="HongKong"></span>
+									</td>
+									<td>
+										<span id="Beijing"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Shanghai</td><td>Seoul</td><td>Tokyo</td><td>Melbourne</td>
+									<td>Shanghai</td>
+									<td>Seoul</td>
+									<td>Tokyo</td>
+									<td>Melbourne</td>
 								</tr>
 								<tr>
-								<td><span id="Shanghai"></span></td><td><span id="Seoul"></span></td><td><span id="Tokyo"></span></td><td><span id="Melbourne"></span></td>
+									<td>
+										<span id="Shanghai"></span>
+									</td>
+									<td>
+										<span id="Seoul"></span>
+									</td>
+									<td>
+										<span id="Tokyo"></span>
+									</td>
+									<td>
+										<span id="Melbourne"></span>
+									</td>
 								</tr>
 								<tr class="hrow">
-								<td>Sydney</td><td>Brisbane</td><td>Vladivostok</td><td>Kamchatka</td>
+									<td>Sydney</td>
+									<td>Brisbane</td>
+									<td>Vladivostok</td>
+									<td>Kamchatka</td>
 								</tr>
 								<tr>
-								<td><span id="Sydney"></span></td><td><span id="Brisbane"></span></td><td><span id="Vladivostok"></span></td><td><span id="Kamchatka"></span></td>
+									<td>
+										<span id="Sydney"></span>
+									</td>
+									<td>
+										<span id="Brisbane"></span>
+									</td>
+									<td>
+										<span id="Vladivostok"></span>
+									</td>
+									<td>
+										<span id="Kamchatka"></span>
+									</td>
 								</tr>
-								</table>
+							</table>
 						</div>
 						<div class="banner-area">
 							<a href="#">
@@ -201,7 +405,7 @@
 			</div>
 		</div>
 		<footer class="text-center">
-			My Banners - 2015. All rights reserved
+			Multi Tools - 2015. All rights reserved
 		</footer>
 		<div class="modal fade" id="result-single-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-sm">
