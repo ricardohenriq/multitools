@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title></title>
-		<meta name="description" content=".">
+		<meta name="block" content=".">
 		<meta name="keywords" content=".">
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Ricardo Henrique">
@@ -15,7 +15,7 @@
 		<meta name="twitter:site" content="@">
 		<meta name="twitter:creator" content="@ricardohenriq">
 		<meta property="og:title" content="">
-		<meta property="og:description" content=".">
+		<meta property="og:block" content=".">
 		<meta property="og:url" content="http://multitools.github.io/">
 		<meta property="og:image" content="">
 		<meta property="og:type" content="website">
@@ -40,37 +40,35 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Words and Texts<span class="sr-only">(current)</span></</a></li>
+						<li class="active"><a href="index.html">Words and Texts<span class="sr-only">(current)</span></a></li>
 						<li><a href="hashes.html">Hashes</a></li>
-						<li><a href="world-time.html">World Timea></li>
-						<li><a href="ascii-art.html">ASCII Art</a></li>
+						<li><a href="passwords.html">Generate Passwords</a></li>
+						<li><a href="my-ip.html">Check your IP</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit Images <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="edit-images.html">Color to Black & White</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">One more separated link</a></li>
+								<li><a href="colored-to-black-white.html">Color to Black & White</a></li>
+								<li><a href="images-to-base64.html">Convert images to Base64</a></li>
 							 </ul>
 						</li>
-						<li><a href="colorpick.html">Colorpick</a></li>
-						<li><a href="passwords.html">Generate Passwords</a></li>
-						<li><a href="my-ip.html">Check your IP</a></li>
-						<li><a href="lorem-ipsum.html">Lorem Ipsum</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE TOOLS <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="colorpick.html">Colorpick</a></li>
+								<li><a href="world-time.html">World Time</a></li>
+								<li><a href="ascii-art.html">ASCII Art</a></li>
+								<li><a href="lorem-ipsum.html">Lorem Ipsum</a></li>
+							 </ul>
+						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#">DONATE</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">INFORMATIONS <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">TOS</a></li>
+								<li><a href="#">FAQ</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -81,40 +79,39 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 span7 text-center">
-						<div class="banner-area">
+						<div class="block">
 							<a href="#">
 								<img src="temp/728x90black.png">
 							</a>
 						</div>
-						<div class="description">
-							<span class="title">
+						<div class="block">
+							<h1 class="title">
 								Mude a capitalização, inverta o texto, conte os caracteres, manipule o texto 
 								tudo em um só click e em um só lugar.
-							</span>
-							<br>
-							<span>
+							</h1>
+							<h2>
 								Simplesmente insira a palavra ou texto na caixa de texto abaixo e clique no botão com 
 								a opção desejada.
-							</span>
+							</h2>
 						</div>
-						<div class="work-area">
+						<div class="block">
 							<textarea rows="20" name="text" id="text" maxlength="10000"	placeholder="Put your Text or Word Here."></textarea>
-							<div class="buttons-area">
-								<button class="btn btn-info" onclick="strToUpperCase('text')">TO UPPER CASE</button>
-								<button class="btn btn-info" onclick="strToLowerCase('text')">to lower case</button>
-								<button class="btn btn-info" onclick="strToSentenceCase('text')">to Sentence case</button>
-								<button class="btn btn-info" onclick="strToTitleCase('text')">to Title case</button>
-								<button class="btn btn-info" onclick="strLength('text','result-single','result-single-modal')">Count Chars</button>
-								<button class="btn btn-info" onclick="countWords('text', 'result-single','result-single-modal')">Count Words</button>
-								<button class="btn btn-info" onclick="countVowel('text','result-single','result-single-modal')">Count Vowels</button>
-								<button class="btn btn-info" onclick="countConsonant('text','result-single','result-single-modal')">Count Consonants</button>
-								<button class="btn btn-info" data-toggle="modal" data-target="#replace-modal">Replace Characters</button>
-								<button class="btn btn-info" onclick="removeExtraSpaces('text')">Remove Extra Spaces</button>
-								<button class="btn btn-info" onclick="removeAllSpaces('text')">Remove All Spaces</button>
-								<button class="btn btn-info" onclick="copyToClipboard('text')">Copy to Clipboard</button>
+							<div class="block">
+								<button class="btn gray" onclick="strToUpperCase('text')">TO UPPER CASE</button>
+								<button class="btn gray" onclick="strToLowerCase('text')">to lower case</button>
+								<button class="btn gray" onclick="strToSentenceCase('text')">to Sentence case</button>
+								<button class="btn gray" onclick="strToTitleCase('text')">to Title case</button>
+								<button class="btn gray" onclick="strLength('text','result-single','result-single-modal')">Count Chars</button>
+								<button class="btn gray" onclick="countWords('text', 'result-single','result-single-modal')">Count Words</button>
+								<button class="btn gray" onclick="countVowel('text','result-single','result-single-modal')">Count Vowels</button>
+								<button class="btn gray" onclick="countConsonant('text','result-single','result-single-modal')">Count Consonants</button>
+								<button class="btn gray" data-toggle="modal" data-target="#replace-modal">Replace Characters</button>
+								<button class="btn gray" onclick="removeExtraSpaces('text')">Remove Extra Spaces</button>
+								<button class="btn gray" onclick="removeAllSpaces('text')">Remove All Spaces</button>
+								<button class="btn gray" onclick="copyToClipboard('text')">Copy to Clipboard</button>
 							</div>
 						</div>
-						<div class="banner-area">
+						<div class="block">
 							<a href="#">
 								<img src="temp/728x90black.png">
 							</a>
@@ -164,7 +161,7 @@
 									<input type="text" class="form-control" name="out-char" id="out-char">
 								</div>
 							</div>
-							<button class="btn btn-info" onclick="replaceCharacters('text','in-char','out-char','replace-modal');return false;">Replace Characters</button>
+							<button class="btn gray" onclick="replaceCharacters('text','in-char','out-char','replace-modal');return false;">Replace Characters</button>
 						</form>
 					</div>
 				</div>

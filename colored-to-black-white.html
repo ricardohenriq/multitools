@@ -5,27 +5,28 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title></title>
-		<meta name="block" content=".">
-		<meta name="keywords" content=".">
+		<meta name="block" content="You can publish your banner for free, discover interesting sites,
+			access offers and companies.">
+		<meta name="keywords" content="Banner,Publish Banner free,Banner Free,Publish your site,Publish your
+			Company,access offer,Publish affiliate banner.">
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Ricardo Henrique">
-		<meta name="reply-to" content="">
-		<link rel="icon" href="" sizes="32x32">
+		<meta name="reply-to" content="mybannersreceiver@gmail.com">
+		<link rel="icon" href="assets/images/Leprechaun32x32.png" sizes="32x32">
 		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@">
+		<meta name="twitter:site" content="@mybanners">
 		<meta name="twitter:creator" content="@ricardohenriq">
-		<meta property="og:title" content="">
-		<meta property="og:block" content=".">
-		<meta property="og:url" content="http://multitools.github.io/">
-		<meta property="og:image" content="">
+		<meta property="og:title" content="Publish your Banner to World">
+		<meta property="og:block" content="You can publish your banner for free, discover interesting sites,
+			access offers and companies.">
+		<meta property="og:url" content="http://mybanners.github.io/">
+		<meta property="og:image" content="http://mybanners.github.io/assets/images/Leprechaun150x150.gif">
 		<meta property="og:type" content="website">
-		<meta property="og:site_name" content="">
+		<meta property="og:site_name" content="MyBanners - Publish your Banner to World">
 		<link rel="stylesheet" href="library/Bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="library/ColorPicker/css/colorpicker.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<script defer src="library/jquery-1.11.1/jquery-1.11.1.min.js"></script>
 		<script defer src="library/Bootstrap/js/bootstrap.min.js"></script>
-		<script defer src="library/ColorPicker/js/colorpicker.js"></script>
 		<script defer src="assets/js/main.js"></script>
 	</head>
 	<body>
@@ -46,17 +47,17 @@
 						<li><a href="hashes.html">Hashes</a></li>
 						<li><a href="passwords.html">Generate Passwords</a></li>
 						<li><a href="my-ip.html">Check your IP</a></li>
-						<li class="dropdown">
+						<li class="dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit Images <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="colored-to-black-white.html">Color to Black & White</a></li>
+								<li class="active"><a href="colored-to-black-white.html">Color to Black & White<span class="sr-only">(current)</span></a></li>
 								<li><a href="images-to-base64.html">Convert images to Base64</a></li>
 							 </ul>
 						</li>
-						<li class="dropdown active">
+						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE TOOLS <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li class="active"><a href="colorpick.html">Colorpick<span class="sr-only">(current)</span></a></li>
+								<li><a href="colorpick.html">Colorpick</a></li>
 								<li><a href="world-time.html">World Time</a></li>
 								<li><a href="ascii-art.html">ASCII Art</a></li>
 								<li><a href="lorem-ipsum.html">Lorem Ipsum</a></li>
@@ -81,25 +82,21 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 span7 text-center">
-						<div class="block">
-							<a href="#">
-								<img src="temp/728x90black.png">
-							</a>
-						</div>
-						<div class="block">
+						<div class="block block">
 							<h1 class="title">
-								Encontre a cor que deseja usando o colorpick, nele você verá a cor que 
-								procura representada em Hexadecimal, RGB e HSV.
+								Deixe uma foto de computador em Preto e Branco (a foto original não 
+								será auterada).
 							</h1>
 							<h2>
-								Coloque o mouse sobre o circulo de cores e arrasteo até as cores desejadas, 
-								para mudar o tom das cores coloque o mouse sobre as setas e arrate até a 
-								cor desejada.
+								Simplesmente adicione a foto que deseja que fique em Preto e Branco clicando 
+								no botão escolher arquivo, assim que carregada já será exibida a foto em 
+								Preto e Branco, clique com o Botão direito e escolha a opção salvar como 
+								para salvar a foto.
 							</h2>
 						</div>
-						<div class="block">
-							<p id="colorpickerHolder">
-							</p>
+						<div class="block" id="bw-picture-area">
+							<input type='file' id="colored-picture-input" class="block">
+							<img id="bw-picture" src="" class="block">
 						</div>
 						<div class="block">
 							<a href="#">

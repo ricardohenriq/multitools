@@ -317,8 +317,8 @@ function grayscaleImage(imgObj)
 	return canvas.toDataURL();
 }
 
-var outputElem = document.querySelector("#output");
-$('#form_input').change(function(){
+var outputElem = document.querySelector("#ascii-art");
+$('#image-to-ascii').change(function(){
 	console.log('s');
   var file = this.files[0];
   var reader = new FileReader();
@@ -360,7 +360,8 @@ function completeLoremLengthSelect(minLength, maxLength){
 $('#generate-lorem-ipsum').click(function(){
 	var loremQuantity = document.getElementById('lorem-quantity').value;
 	var loremType = document.getElementById('lorem-type').value;
-	generateLorem(loremQuantity + loremType, 'text');
+	emptyTag('lorem-ipsum-generated');
+	generateLorem(loremQuantity + loremType, 'lorem-ipsum-generated');
 });
 
 function generateLorem(loremDescription, fieldId){
