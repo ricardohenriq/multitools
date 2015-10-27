@@ -356,5 +356,3 @@ document.getElementById("Kamchatka").innerHTML = worldClock(12, "Europe")
 setTimeout("worldClockZone()", 1000)
 }
 window.onload=worldClockZone;
-
-$('#colorpickerHolder').ColorPicker({flat: true});

@@ -1,0 +1,1 @@
+$('#colorpickerHolder').ColorPicker({flat: true});
