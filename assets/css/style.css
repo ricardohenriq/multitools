@@ -79,3 +79,7 @@ h2{
 #bw-picture-area, #lorem-ipsum-generated{
 	min-height:500px
 }
+
+.navbar-brand{
+	padding-top:10px
+}
