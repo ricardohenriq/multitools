@@ -2,6 +2,10 @@ $(document).ready(function(){
     completePasswordLengthSelect(4, 100);
 });
 
+$('#password-container #copy-to-clipboard').click(function(){
+	copyToClipboard('your-password');
+});
+
 function completePasswordLengthSelect(minLength, maxLength){
 	for (var i = minLength; i < maxLength+1; i++) {
 		$('#password-length').append('<option value=\"' + i + '\">' + i + '</option>');

@@ -79,9 +79,9 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT THE SITE <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">TOS</a></li>
-								<li><a href="#">FAQ</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="terms-of-use.html">Terms of Use</a></li>
+								<li><a href="privacy-policy.html">Privacy Policy</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -109,7 +109,7 @@
 								the Hash will be generated automatically and will be displayed in the dialog box below.
 							</h2>
 						</div>
-						<div class="block">
+						<div class="block" id="hashes-container">
 							<textarea rows="20" name="text" id="text" maxlength="10000"	placeholder="Put your Text or Word Here to generate the HASH."></textarea>
 							<hr>
 							<input type="file" id="file-to-hash" class="block">
@@ -128,7 +128,7 @@
 								</select>
 								<button class="btn gray" id="generate-hash">GENERATE</button>
 								<button class="btn gray" id="reset-text">Clear All</button>
-								<button class="btn gray" onclick="copyToClipboard('hash')">Copy to Clipboard</button>
+								<button class="btn gray" id="copy-to-clipboard">Copy to Clipboard</button>
 							</div>
 							<div class="row result-area">
 								<label class="control-label col-sm-2 middle" for="hash">HASH:</label>
@@ -146,8 +146,5 @@
 				</div>
 			</div>
 		</div>
-		<footer class="text-center">
-			MultiTools - Dozens of tools in same place - 2015. All rights reserved
-		</footer>
 	</body>
 </html>

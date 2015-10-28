@@ -25,7 +25,7 @@
 		<script defer src="library/jquery-1.11.1/jquery-1.11.1.min.js"></script>
 		<script defer src="library/Bootstrap/js/bootstrap.min.js"></script>
 		<script defer src="assets/js/main.js"></script>
-		<script defer src="assets/js/index.js"></script>
+		<script defer src="assets/js/contact.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-default">
@@ -89,7 +89,7 @@
 						</div>
 						<div class="block">
 							<h3 class="text-center">Contact Form</h3>
-							<form id="contact_form" class="form-horizontal" role="form" method="POST">
+							<form id="contact-form" class="form-horizontal" role="form" method="POST">
 								<div class="form-group contact-field">
 									<label class="control-label col-sm-2" for="nome">Nome:</label>
 									<div class="col-sm-10">
@@ -116,7 +116,7 @@
 								</div>
 								<div class="form-group">        
 									<div class="col-sm-offset-2 col-sm-10">
-										<button class="btn btn-info gray pull-right" onClick="sendMail();return false;">Send</button>
+										<button class="btn gray pull-right" id="send-mail">Send</button>
 									</div>
 								</div>
 							</form>
@@ -130,8 +130,5 @@
 				</div>
 			</div>
 		</div>
-		<footer class="text-center">
-			MultiTools - Dozens of tools in same place - 2015. All rights reserved
-		</footer>
 	</body>
 </html>

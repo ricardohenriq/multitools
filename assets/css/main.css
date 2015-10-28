@@ -3,40 +3,31 @@ textarea{
 }
 
 .block{
-	margin-bottom:20px;
+	margin-bottom:20px
 }
 
 .hrow {
-font-weight:bold
+	font-weight:bold
 }
 
 .hrow td{
-padding-top: 20px;
-width: 140px;
+	padding-top:20px;
+	width:140px
 }
 
 .colorpicker{
-	margin: 0 auto !important;
+	margin:0 auto !important
 }
 
 #my-ip{
 	border:4px solid #5e5e5e;
 	font-size:40px;
 	font-weight:bold;
-	background-color:#e7e7e7;
-}
-
-footer{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #BBBDBF;
-    bottom: 0;
-    margin-bottom: -40px;
-    width: 100%;
+	background-color:#e7e7e7
 }
 
 .title{
-	font-weight:bold;
+	font-weight:bold
 }
 
 h1{
@@ -53,7 +44,7 @@ h2{
 	border-color:#BBBDBF
 }
 
-.gray:hover, .gray:focus{
+.gray:hover,.gray:focus{
 	background-color:#BBBDBF;
 	border-color:#BBBDBF
 }
@@ -67,15 +58,15 @@ h2{
 	text-align:left !important;
 }
 
-#password-area{
+#password-container{
 	text-align:left
 }
  
- #password-result, #block-password{
+ #password-result,#block-buttons-password{
 	text-align:center
 }
 
-#bw-picture-area, #lorem-ipsum-generated{
+#bw-picture-area,#lorem-ipsum-generated{
 	min-height:500px
 }
 

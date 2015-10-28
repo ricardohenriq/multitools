@@ -1,3 +1,7 @@
+$('#hashes-container #copy-to-clipboard').click(function(){
+	copyToClipboard('hash');
+});
+
 $('#generate-hash').click(function(){
 	var hashType = document.getElementById('hash-type').value;
 	var textToHash = getDataToHash('text');

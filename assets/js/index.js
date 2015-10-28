@@ -1,8 +1,20 @@
+$('#strings-container #copy-to-clipboard').click(function(){
+	copyToClipboard('text');
+});
+
+$('#str-to-upper-case').click(function(){
+	strToUpperCase('text');
+});
+
 function strToUpperCase(fieldId){
 	var strOriginal = document.getElementById(fieldId).value;
 	var strUpperCase = strOriginal.toUpperCase();
 	document.getElementById(fieldId).value = strUpperCase;
 }
+
+$('#str-to-lower-case').click(function(){
+	strToLowerCase('text');
+});
 
 function strToLowerCase(fieldId){
 	var strOriginal = document.getElementById(fieldId).value;
@@ -10,8 +22,12 @@ function strToLowerCase(fieldId){
 	document.getElementById(fieldId).value = strLowerCase;
 }
 
+$('#str-to-sentence-case').click(function(){
+	strToSentenceCase('text');
+});
+
 function strToSentenceCase(fieldId){
-	var string = document.getElementById(fieldId).value;
+	var string = document.getElementById(fieldId).value.toLowerCase();
     var n = string.split(".");
 	var vfinal = ""
 	for(var i = 0; i < n.length; i++){
@@ -27,6 +43,10 @@ function strToSentenceCase(fieldId){
 	document.getElementById(fieldId).value = vfinal.substring(0, vfinal.length - 1);
 }
 
+$('#str-to-title-case').click(function(){
+	strToTitleCase('text');
+});
+
 function strToTitleCase(fieldId){
 	//incluir na regex pegar Ç
 	var text = document.getElementById(fieldId).value;
@@ -36,12 +56,20 @@ function strToTitleCase(fieldId){
 		);
 }
 
+$('#str-length').click(function(){
+	strLength('text','result-single','result-single-modal');
+});
+
 function strLength(fieldId, fieldAnswer, modalId){
 	var str = document.getElementById(fieldId).value;
 	var answer = 'Text has: ' + str.length + ' Characters';
 	document.getElementById(fieldAnswer).innerHTML = answer;
 	$('#' + modalId).modal('show');
 }
+
+$('#count-words').click(function(){
+	countWords('text', 'result-single','result-single-modal');
+});
 
 function countWords(fieldId, fieldAnswer, modalId){
 	var str = document.getElementById(fieldId).value;
@@ -53,6 +81,11 @@ function countWords(fieldId, fieldAnswer, modalId){
 	document.getElementById(fieldAnswer).innerHTML = answer;
 	$('#' + modalId).modal('show');
 }
+
+$('#replace-characters').click(function(){
+	replaceCharacters('text','in-char','out-char','replace-modal');
+	return false;
+});
 
 function replaceCharacters(fieldId, inCharId, outCharId, modalId) {
 	var string = document.getElementById(fieldId).value;
@@ -67,6 +100,10 @@ function replaceCharacters(fieldId, inCharId, outCharId, modalId) {
 	$('#' + modalId).modal('hide');
 }
 
+$('#remove-extra-spaces').click(function(){
+	removeExtraSpaces('text');
+});
+
 function removeExtraSpaces(fieldId){
 	var originalString = document.getElementById(fieldId).value;
 	var newString = originalString.replace(/(^\s*)|(\s*$)/gi,"");
@@ -74,6 +111,10 @@ function removeExtraSpaces(fieldId){
 	newString = newString.replace(/\n /,"\n");
 	document.getElementById(fieldId).value = newString;
 }
+
+$('#count-vowel').click(function(){
+	countVowel('text','result-single','result-single-modal');
+});
 
 function countVowel(fieldId, fieldAnswer, modalId){
 	var text = document.getElementById(fieldId).value;
@@ -89,6 +130,10 @@ function countVowel(fieldId, fieldAnswer, modalId){
 	document.getElementById(fieldAnswer).innerHTML = answer;
 	$('#' + modalId).modal('show');
 }
+
+$('#count-consonant').click(function(){
+	countConsonant('text','result-single','result-single-modal');
+});
 
 function countConsonant(fieldId, fieldAnswer, modalId){
 	var text = document.getElementById(fieldId).value;
@@ -106,6 +151,10 @@ function countConsonant(fieldId, fieldAnswer, modalId){
 	document.getElementById(fieldAnswer).innerHTML = answer;
 	$('#' + modalId).modal('show');
 }
+
+$('#remove-all-spaces').click(function(){
+	removeAllSpaces('text');
+});
 
 function removeAllSpaces(fieldId) {
 	var originalString = document.getElementById(fieldId).value;
