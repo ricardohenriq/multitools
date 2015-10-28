@@ -1,6 +1,5 @@
 var outputElem = document.querySelector("#ascii-art");
 $('#image-to-ascii').change(function(){
-	console.log('s');
   var file = this.files[0];
   var reader = new FileReader();
   reader.onload = function() {

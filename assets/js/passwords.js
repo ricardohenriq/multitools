@@ -10,9 +10,7 @@ function completePasswordLengthSelect(minLength, maxLength){
 
 $('#generate-password').click(function(){
 	var passwordCharArray = createPasswordCharArray();
-	//alert(passwordCharArray);
 	var pathLength = document.getElementById('password-length').value;
-	//alert(pathLength);
 	var password = randomString(passwordCharArray, pathLength);
 	printValue(password, 'your-password');
 });
@@ -46,7 +44,6 @@ function createPasswordCharArray(){
 	return passwordCharArray;
 }
 
-//http://www.mediacollege.com/internet/javascript/number/random.html
 function randomString(passwordCharArray, pathLength){
 	var randomstring = '';
 	for (var i = 0; i < pathLength; i++) {

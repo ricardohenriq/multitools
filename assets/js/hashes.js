@@ -72,7 +72,6 @@ function executeHashRIPEMD160(text){
 $('#file-to-hash').change(
     function () {
         var reader = new FileReader();
-        
         reader.addEventListener(
             'load',
             function () {

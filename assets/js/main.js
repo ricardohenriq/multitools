@@ -1,4 +1,3 @@
-//http://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
 function copyToClipboard(textareaId){
 	var textarea = document.querySelector('#' + textareaId);
 	textarea.select();
@@ -10,17 +9,6 @@ function copyToClipboard(textareaId){
 		alert('Oops, unable to copy');
 	}
 }
-
-
-//http://www.mediacollege.com/internet/javascript/page/scroll.html
-
-
-
-
-//função que captura o click de gerar hash
-//função que faz o download do script e chama a função que faz o hash
-//função que faz o hash
-
 
 function printValue(value, areaToPrint){
 	document.getElementById(areaToPrint).value = value;
@@ -69,13 +57,11 @@ $('#bw-picture').load(function(){
 	}
 });
 
-function grayscaleImageIE(imgObj)
-{
+function grayscaleImageIE(imgObj){
 	imgObj.style.filter = 'progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)';
 }
 
-function grayscaleImage(imgObj)
-{
+function grayscaleImage(imgObj){
 	var canvas = document.createElement('canvas');
 	var canvasContext = canvas.getContext('2d');
 	

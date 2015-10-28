@@ -11,20 +11,20 @@ function strToLowerCase(fieldId){
 }
 
 function strToSentenceCase(fieldId){
-	var string=document.getElementById(fieldId).value;
-    var n=string.split(".");
-	var vfinal=""
-	for(i=0;i<n.length;i++)
-	{
-	   var spaceput=""
-	   var spaceCount=n[i].replace(/^(\s*).*$/,"$1").length;
-	   n[i]=n[i].replace(/^\s+/,"");
-	   var newstring=n[i].charAt(n[i]).toUpperCase() + n[i].slice(1);
-	   for(j=0;j<spaceCount;j++)
-	   spaceput=spaceput+" ";
-	   vfinal=vfinal+spaceput+newstring+".";
-	 }
-	 document.getElementById(fieldId).value=vfinal.substring(0, vfinal.length - 1);
+	var string = document.getElementById(fieldId).value;
+    var n = string.split(".");
+	var vfinal = ""
+	for(var i = 0; i < n.length; i++){
+		var spaceput = ""
+		var spaceCount = n[i].replace(/^(\s*).*$/,"$1").length;
+		n[i] = n[i].replace(/^\s+/,"");
+		var newstring = n[i].charAt(n[i]).toUpperCase() + n[i].slice(1);
+		for(j = 0; j < spaceCount; j++){
+			spaceput = spaceput + " ";
+		}
+	   vfinal = vfinal + spaceput + newstring + ".";
+	}
+	document.getElementById(fieldId).value = vfinal.substring(0, vfinal.length - 1);
 }
 
 function strToTitleCase(fieldId){
@@ -43,7 +43,6 @@ function strLength(fieldId, fieldAnswer, modalId){
 	$('#' + modalId).modal('show');
 }
 
-//http://www.mediacollege.com/internet/javascript/text/count-words.html
 function countWords(fieldId, fieldAnswer, modalId){
 	var str = document.getElementById(fieldId).value;
 	str = str.replace(/(^\s*)|(\s*$)/gi,"");
@@ -53,10 +52,8 @@ function countWords(fieldId, fieldAnswer, modalId){
 	var answer = 'Text has: ' + wordsLength + ' Words';
 	document.getElementById(fieldAnswer).innerHTML = answer;
 	$('#' + modalId).modal('show');
-	//document.getElementById("wordcount").value = s.split(' ').length;
 }
 
-//http://www.mediacollege.com/internet/javascript/text/replace-characters.html
 function replaceCharacters(fieldId, inCharId, outCharId, modalId) {
 	var string = document.getElementById(fieldId).value;
 	var inChar = document.getElementById(inCharId).value;
@@ -70,7 +67,6 @@ function replaceCharacters(fieldId, inCharId, outCharId, modalId) {
 	$('#' + modalId).modal('hide');
 }
 
-//http://www.mediacollege.com/internet/javascript/text/remove-extra-spaces.html
 function removeExtraSpaces(fieldId){
 	var originalString = document.getElementById(fieldId).value;
 	var newString = originalString.replace(/(^\s*)|(\s*$)/gi,"");
@@ -79,12 +75,11 @@ function removeExtraSpaces(fieldId){
 	document.getElementById(fieldId).value = newString;
 }
 
-//http://www.devfuria.com.br/logica-de-programacao/strings-contar-vogais/
 function countVowel(fieldId, fieldAnswer, modalId){
 	var text = document.getElementById(fieldId).value;
     var totalVowel = 0;
     var vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
-    for (var i = 0; i < text.length; i++ ) {
+    for (var i = 0; i < text.length; i++) {
         if(vowels.indexOf(text[i]) != -1) {
             totalVowel++;
         }
@@ -101,7 +96,7 @@ function countConsonant(fieldId, fieldAnswer, modalId){
     var consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v',
 	'w', 'x', 'y', 'z', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 
 	'V', 'W', 'X', 'Y', 'Z'];
-    for (var i = 0; i < text.length; i++ ) {
+    for (var i = 0; i < text.length; i++) {
         if(consonants.indexOf(text[i]) != -1) {
             totalConsonant++;
         }
@@ -112,7 +107,6 @@ function countConsonant(fieldId, fieldAnswer, modalId){
 	$('#' + modalId).modal('show');
 }
 
-//http://www.mediacollege.com/internet/javascript/form/remove-spaces.html/
 function removeAllSpaces(fieldId) {
 	var originalString = document.getElementById(fieldId).value;
 	var newString = originalString.split(' ').join('');

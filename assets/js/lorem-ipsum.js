@@ -3,7 +3,7 @@ $(document).ready(function(){
 });
 
 function completeLoremLengthSelect(minLength, maxLength){
-	for (var i = minLength; i < maxLength+1; i++) {
+	for(var i = minLength; i < maxLength+1; i++){
 		$('#lorem-quantity').append('<option value=\"' + i + '\">' + i + '</option>');
 	}
 }
