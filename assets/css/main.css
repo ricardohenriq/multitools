@@ -30,11 +30,11 @@ textarea{
 	font-weight:bold
 }
 
-h1{
+.custom-h1{
 	font-size:16px
 }
 
-h2{
+.custom-h2{
 	font-size:14px
 }
 
@@ -72,4 +72,21 @@ h2{
 
 .navbar-brand{
 	padding-top:10px
+}
+
+.navbar-brand img{
+	display:inline-block
+}
+
+.custom-select{
+	max-width:150px;
+	height:34px
+}
+
+#base64-container #img{
+	max-width:100%
+}
+
+#error-container{
+	margin-top:10%
 }
