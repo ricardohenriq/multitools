@@ -1,5 +1,6 @@
 $('#colored-picture-input').change(function(event){
-	document.getElementById('bw-picture').src = URL.createObjectURL(event.target.files[0]);	         
+	document.getElementById('bw-picture').src = URL.createObjectURL(event.target.files[0]);
+	bwPictureLoad = false;	
 });
 
 var bwPictureLoad = false;
@@ -9,10 +10,10 @@ $('#bw-picture').load(function(){
 		var imgObj = document.getElementById('bw-picture');
 		if(navigator.appName == 'Microsoft Internet Explorer'){
 			grayscaleImageIE(imgObj);
-		} else {
+		}else{
 			imgObj.src = grayscaleImage(imgObj);
 		} 
-		$('#bw-picture').css('max-width','100%');
+		$('#bw-picture').css({'max-width':'100%'},{'max-height':'100%'});
 	}
 });
 

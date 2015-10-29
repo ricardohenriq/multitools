@@ -54,8 +54,8 @@ textarea{
 	margin-top:10px
 }
 
-#contact_form .control-label{
-	text-align:left !important;
+#contact_form .control-label, .panel{
+	text-align:left !important
 }
 
 #password-container{
