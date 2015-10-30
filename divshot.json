@@ -1,6 +1,6 @@
 {
 	"name":"multitools",
-	"root":"_site",
+	"root":"/",
 	"clean_urls":true,
 	"error_page":"error.html",
 	"exclude":[
