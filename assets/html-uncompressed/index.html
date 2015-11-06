@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Convert Case - MultiTools Dozens of tools in same place</title>
+		<meta name="description" content="Let the text full upper or lower case, count
+			how many letters, vowels and consonants, change capitalization, replace letters and phrases
+			All in one place.">
+		<meta name="keywords" content="Uppercase text,Lowercase text,Counting characters,Counting vowels,
+			Count consonants,letters Replace,Remove blanks">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="Ricardo Henrique">
+		<meta name="reply-to" content="albernazassis@gmail.com">
+		<link rel="icon" href="assets/images/MultiTools32x32.min.png" sizes="32x32">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@multitools">
+		<meta name="twitter:creator" content="@ricardohenrique">
+		<meta property="og:title" content="Convert Case - MultiTools Dozens of tools in same place">
+		<meta property="og:description" content="Let the text full upper or lower case, count
+			how many letters, vowels and consonants, change capitalization, replace letters and phrases
+			All in one place.">
+		<meta property="og:url" content="http://multitools.divshot.io/">
+		<meta property="og:image" content="http://multitools.divshot.io/assets/images/MultiTools600x600.min.png">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="MultiTools - Dozens of tools in same place">
+		<link rel="stylesheet" href="library/Bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/main.min.css">
+		<script defer src="library/jquery-1.11.1/jquery-1.11.1.min.js"></script>
+		<script defer src="library/Bootstrap/js/bootstrap.min.js"></script>
+		<script defer src="assets/js/main.min.js"></script>
+		<script defer src="assets/js/index.min.js"></script>
+		<script defer src="assets/js/download-banners.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">MultiTools
+						<img src="assets/images/MultiTools32x32.min.png">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Words and Texts<span class="sr-only">(current)</span></a></li>
+						<li><a href="hashes.html">Hashes</a></li>
+						<li><a href="passwords.html">Generate Passwords</a></li>
+						<li><a href="my-ip.html">Check your IP</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit Images <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="colored-to-black-white.html">Color to Black & White</a></li>
+								<li><a href="images-to-base64.html">Convert images to Base64</a></li>
+							 </ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE TOOLS <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="colorpick.html">Colorpick</a></li>
+								<li><a href="world-time.html">World Time</a></li>
+								<li><a href="ascii-art.html">ASCII Art</a></li>
+								<li><a href="lorem-ipsum.html">Lorem Ipsum</a></li>
+							 </ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="orange-button"><a href="banners.html">BANNERS</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT THE SITE <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="orange-button"><a href="#">DONATE</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="privacy-policy.html">Privacy Policy</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 span7 text-center">
+						<div id="first-ad" class="block">
+							
+						</div>
+						<div class="block">
+							<h1 class="title custom-h1">
+								Change capitalization, reverse text, stories and characters, manipulate text
+								all in one click and in one place.
+							</h1>
+							<h2 class="custom-h2">
+								Simply insert the word or text in the text box below and click the button with
+								the desired option.
+							</h2>
+						</div>
+						<div class="block" id="strings-container">
+							<textarea rows="20" name="text" id="text" maxlength="10000"	placeholder="Put your Text or Word Here."></textarea>
+							<div class="block">
+								<button class="btn gray" id="str-to-upper-case">TO UPPER CASE</button>
+								<button class="btn gray" id="str-to-lower-case">to lower case</button>
+								<button class="btn gray" id="str-to-sentence-case">to Sentence case</button>
+								<button class="btn gray" id="str-to-title-case">to Title case</button>
+								<button class="btn gray" id="str-length">Count Chars</button>
+								<button class="btn gray" id="count-words">Count Words</button>
+								<button class="btn gray" id="count-vowel">Count Vowels</button>
+								<button class="btn gray" id="count-consonant">Count Consonants</button>
+								<button class="btn gray" data-toggle="modal" data-target="#replace-modal">Replace Characters</button>
+								<button class="btn gray" id="remove-extra-spaces">Remove Extra Spaces</button>
+								<button class="btn gray" id="remove-all-spaces">Remove All Spaces</button>
+								<button class="btn gray" id="copy-to-clipboard">Copy to Clipboard</button>
+							</div>
+						</div>
+						<div id="second-ad" class="block">
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="result-single-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title span7 text-center title" id="myModalLabel">Resultado</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group text-center">
+							<div class="col-md-12 span7 text-center">
+								<span class="title" id="result-single"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="replace-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title span7 text-center title" id="myModalLabel">Replace</h4>
+					</div>
+					<div class="modal-body text-center">
+						<form class="form-inline" method="POST">
+							<div class="form-group">
+								<label class="control-label col-md-2" for="in-char">This:</label>
+								<div class="col-md-4">          
+									<input type="text" class="form-control" name="in-char" id="in-char">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="out-char">To:</label>
+								<div class="col-sm-4">          
+									<input type="text" class="form-control" name="out-char" id="out-char">
+								</div>
+							</div>
+							<button class="btn gray" id="replace-characters">Replace Characters</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

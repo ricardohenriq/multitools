@@ -1,3 +1,30 @@
+.banner-full{
+	width:468px;
+	height:60px
+}
+
+.banner-leaderboard{
+	width:728px;
+	height:90px
+}
+
+.orange-button{
+	background-color:#F39C12 !important
+}
+
+.orange-button a{
+	color:#FFF !important
+}
+
+.orange-button a:hover{
+	color:#000 !important;
+	background-color:#F39C12 !important
+}
+
+.banner{
+	display:inline;
+}
+
 textarea{
 	width:100%
 }
@@ -20,10 +47,10 @@ textarea{
 }
 
 #my-ip{
-	border:4px solid #5e5e5e;
+	border:4px solid #5E5E5E;
 	font-size:40px;
 	font-weight:bold;
-	background-color:#e7e7e7
+	background-color:#E7E7E7
 }
 
 .title{
