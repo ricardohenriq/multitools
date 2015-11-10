@@ -1,101 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
-<url>
-	<loc>http://multitools.divshot.io/</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>1.00</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/index.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/hashes.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/passwords.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/my-ip.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/colored-to-black-white.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/images-to-base64.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/colorpick.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/world-time.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/ascii-art.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/lorem-ipsum.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/contact.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/privacy-policy.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
-<url>
-	<loc>http://multitools.divshot.io/banners.html</loc>
-	
-	<lastmod>2015-10-30</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.80</priority>
-</url>
+	<url>
+		<loc>http://multitools.divshot.io/</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.00</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/index.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/hashes.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/passwords.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/my-ip.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/colored-to-black-white.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/images-to-base64.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/colorpick.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/world-time.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/ascii-art.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/lorem-ipsum.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/contact.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/privacy-policy.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://multitools.divshot.io/banners.html</loc>
+		<lastmod>2015-10-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
 </urlset>

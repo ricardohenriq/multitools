@@ -117,3 +117,7 @@ textarea{
 #error-container{
 	margin-top:10%
 }
+
+.banner *{
+	max-width:100% !important
+}

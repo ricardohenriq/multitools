@@ -5,6 +5,11 @@
 	"error_page":"error.html",
 	"exclude":[
 		"divshot.json",
-		"README.md"
-	]
+		"README.md",
+		"temp/**"
+	],
+	"cache_control":{
+		"/assets/**": 31536000,
+		"/library/**": 31536000
+	}
 }
